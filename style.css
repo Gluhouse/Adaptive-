@@ -417,6 +417,7 @@ p {
 .boasting__img:nth-child(2) {
   width: 40%;
   height: auto;
+  max-height: 23.3rem;
   border-radius: 0;
   margin-left: 0;
 }
@@ -819,6 +820,7 @@ p {
 .package__img {
   width: 45%;
   height: auto;
+  max-height: 25rem;
 }
 
 .package__wrapper {
