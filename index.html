@@ -254,7 +254,7 @@
     <main>
       <section class="bhost__boasting">
         <div class="page__container">
-          <div class="boasting__wrapper flex-around">
+          <div class="boasting__wrapper">
             <article class="boasting__article">
               <h2 class="boasting__heading">EXPERIENCED WE ARE!</h2>
               <p class="boasting__desc">
@@ -564,7 +564,7 @@
             <h2 class="how__heading p-t-118px">How to build your website ?</h2>
             <p class="how__desc">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod teor invidunt ut abore et dolore magnaLorem ipsum
+              nonumy eirmod teor invidunt ut abore et dolore magna Lorem ipsum
               dolor sit amet, lorem ipsum dollar.
             </p>
             <div class="how__card">
@@ -947,7 +947,7 @@
             </div>
             <div id="package-content-2" class="package__content flex-between">
               <div class="package__wrapper-card">
-                <h3 class="package__title">Startup hosting package</h3>
+                <h3 class="package__title">median hosting package</h3>
                 <div class="wrapper flex-between">
                   <div class="wrapper flex-ai-center w-33perc pos-relative">
                     <img
@@ -1041,6 +1041,7 @@
         packageContent = document.getElementsByClassName("package__content");
         for (i = 0; i < packageContent.length; i++) {
           packageContent[i].style.opacity = "0";
+          packageContent[i].style.zIndex = "1";
         }
 
         packageTab = document.getElementsByClassName("package__tab");
@@ -1052,6 +1053,7 @@
         }
 
         document.getElementById(tabNumber).style.opacity = "1";
+        document.getElementById(tabNumber).style.zIndex = "10";
 
         evt.currentTarget.className += " package__tab-active";
       }
