@@ -1185,6 +1185,9 @@ p {
   }
 }
 @media (max-width: 650px) {
+  .boasting__img:nth-child(2) {
+    max-height: 18rem;
+  }
   .top__socials {
     width: 23%;
     top: -42%;
