@@ -172,6 +172,7 @@ p {
 
 .menu__logo {
   width: 20%;
+  min-width: 12rem;
   height: auto;
 }
 
@@ -393,7 +394,7 @@ p {
 
 .desc__switcher {
   position: absolute;
-  right: -12%;
+  right: -15%;
   top: 54%;
   width: 3.2rem;
   height: 3.2rem;
@@ -1052,7 +1053,7 @@ p {
 
   .t-70 {
     top: 54%;
-    left: -12%;
+    left: -15%;
   }
 
   .desc__block {
@@ -1175,5 +1176,19 @@ p {
 @media (max-width: 450px) {
   .desc__block span {
     font-size: 1rem;
+  }
+
+  .search__form-checkbox-wrapper {
+    width: 100%;
+    min-width: 1rem;
+    font-size: 0.7rem;
+  }
+
+  .search__bar {
+    min-width: 19rem;
+  }
+
+  .tab {
+    bottom: -50%;
   }
 }
