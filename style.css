@@ -857,9 +857,11 @@ p {
 .package__list {
   width: 67%;
   list-style: "\2714";
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: 1.5rem;
 }
 
 .package__item {
@@ -877,6 +879,7 @@ p {
 }
 
 .package__button {
+  display: block;
   padding: 0.625rem 1.25rem;
   background: none;
   border-radius: 5px;
@@ -932,12 +935,18 @@ p {
   background: #00aeef;
 }
 
+#package-content-1 {
+  z-index: 10;
+}
+
 #package-content-2 {
   opacity: 0;
+  z-index: 1;
 }
 
 #package-content-3 {
   opacity: 0;
+  z-index: 1;
 }
 
 @media (min-width: 1280px) and (max-width: 1600px) {
@@ -966,7 +975,7 @@ p {
   }
 }
 
-@media (min-width: 600px) and (max-width: 959px) {
+@media (max-width: 959px) {
   html {
     font-size: 12px;
   }
@@ -1091,7 +1100,7 @@ p {
   }
 
   .package__desc {
-    width: 70%;
+    width: 60%;
   }
 
   .package__img {
@@ -1102,7 +1111,39 @@ p {
     width: 100%;
   }
 
+  .package__wrapper-card-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .package__wrapper-card-wrapper > .wrapper {
+    width: 100%;
+    max-width: 18rem;
+    margin-bottom: 2rem;
+  }
+
   .package__title {
     text-align: center;
+  }
+
+  .package__list {
+    width: 100%;
+    /* justify-content: center; */
+  }
+
+  .package__item {
+    text-align: center;
+  }
+
+  .package__price {
+    font-size: 5rem;
+  }
+
+  .package__button {
+    margin: 0 auto;
+  }
+
+  .tab {
+    bottom: -25%;
   }
 }
