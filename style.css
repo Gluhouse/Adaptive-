@@ -983,11 +983,19 @@ p {
   html {
     font-size: 12px;
   }
+
+  .top__menu {
+    margin: 0 auto 2rem;
+  }
 }
 
 @media (min-width: 960px) and (max-width: 1279px) {
   html {
     font-size: 12px;
+  }
+
+  .top__menu {
+    margin: 0 auto 2rem;
   }
 
   .top__contacts {
@@ -1002,6 +1010,10 @@ p {
 @media (max-width: 959px) {
   html {
     font-size: 12px;
+  }
+
+  .top__menu {
+    margin: 0 auto 2rem;
   }
 
   .top__contacts {
@@ -1040,9 +1052,9 @@ p {
   }
 
   .top__socials {
-    width: 60%;
-    top: -25%;
-    left: 20.4%;
+    width: 47%;
+    top: -40%;
+    left: 32.5%;
     justify-content: space-between;
     flex-direction: row;
   }
@@ -1172,10 +1184,34 @@ p {
     bottom: -25%;
   }
 }
+@media (max-width: 650px) {
+  .top__socials {
+    width: 23%;
+    top: -42%;
+    left: 51.5%;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contacts__info {
+    font-size: 1rem;
+  }
+
+  .socials__img {
+    margin: 0.5rem 0.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
 
 @media (max-width: 450px) {
   .desc__block span {
     font-size: 1rem;
+  }
+
+  .contacts__info {
+    font-size: 0.7rem;
   }
 
   .search__form-checkbox-wrapper {
@@ -1184,11 +1220,20 @@ p {
     font-size: 0.7rem;
   }
 
+  .desc__heading {
+    font-size: 2rem;
+  }
+
   .search__bar {
     min-width: 19rem;
   }
 
   .tab {
     bottom: -50%;
+  }
+
+  .socials__img {
+    width: 1rem;
+    height: 1rem;
   }
 }
